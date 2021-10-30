@@ -71,7 +71,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="text-center pb-2 text-white">
-                <small><i><a href="http://www.unsplash.com">Logos and images sourced from Freepik</a></i></small> <br />
+                {/* <small><i><a href="http://www.unsplash.com">Logos and images sourced from Freepik</a></i></small> <br /> */}
                 <small>© 2021 TK-tech-zone/DreamTravel</small>
             </div>
         </div>
