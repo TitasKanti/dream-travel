@@ -5,7 +5,7 @@ import './Home.css';
 const Home = () => {
     const [tourEvents, setTourEvents] = useState([]);
     useEffect(() => {
-        fetch('/fakeData.json')
+        fetch('https://mighty-shore-84070.herokuapp.com/travel')
             .then(res => res.json())
             .then(data => {
                 setTourEvents(data);

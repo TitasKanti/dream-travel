@@ -9,6 +9,7 @@ import NotFound from './Components/NotFound/NotFound';
 import TourDetail from './Components/TourDetail/TourDetail';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Travel from './Components/Travel/Travel';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
             <Route exact path="/signIn">
               <SignIn></SignIn>
             </Route>
+            {/* <Route exact path="/travel">
+              <Travel></Travel>
+            </Route> */}
             <PrivateRoute exact path="/tourDetail/:id">
               <TourDetail></TourDetail>
             </PrivateRoute>

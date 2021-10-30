@@ -11,7 +11,7 @@ const TourDetail = () => {
     const [selectedEvent, setSelectedEvent] = useState({});
 
     useEffect(() => {
-        fetch('/fakeData.json')
+        fetch('https://mighty-shore-84070.herokuapp.com/travel')
             .then(res => res.json())
             .then(data => setTourEvents(data))
     }, [])
