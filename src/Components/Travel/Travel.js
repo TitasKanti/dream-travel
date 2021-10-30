@@ -19,7 +19,7 @@ const Travel = ({ tourEvent }) => {
                     <p className="font-light mb-2">
                         {duration}
                     </p>
-                    <p className="text-sm mb-3 py-2 text-red-700 bg-indigo-100 text-center">
+                    <p className=" mb-3 py-2 text-green-900 bg-indigo-100 text-center">
                         {price}
                     </p>
 

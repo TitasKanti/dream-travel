@@ -17,11 +17,11 @@ const Header = () => {
 
                 <div className="sm:mb-0 self-center">
 
-                    <NavLink to="/home" activeStyle={{ fontWeight: "bold", color: "khaki" }} className="text-md no-underline text-black ml-3 px-1">Home</NavLink>
+                    <NavLink to="/home" activeStyle={{ fontWeight: "bold", color: "khaki" }} className="text-md no-underline ml-3 px-1">Home</NavLink>
 
-                    <NavLink to="/about" activeStyle={{ fontWeight: "bold", color: "khaki" }} className="text-md no-underline text-grey-darker ml-3 px-1">About</NavLink>
+                    <NavLink to="/about" activeStyle={{ fontWeight: "bold", color: "khaki" }} className="text-md no-underline ml-3 px-1">About</NavLink>
 
-                    <NavLink to="/signIn" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-lg no-underline text-grey-darkest ml-3">Log-In</NavLink>
+                    <NavLink to="/signIn" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-lg no-underline ml-3">Log-In</NavLink>
 
                     {/* <NavLink to="/allServices" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-md no-underline text-grey-darker ml-3 px-1">Services</NavLink> */}
 

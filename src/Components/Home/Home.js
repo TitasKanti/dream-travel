@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <>
             {/* Banner section */}
-            <div className="banner flex justify-center items-center">
+            <div className="banner flex justify-start items-center">
                 <h2 className="text-yellow-100 text-3xl text-center">To make your vacation memorable <br /> <br /> travel with <span className="text-pink-500">Dream Travel</span></h2>
             </div>
 
