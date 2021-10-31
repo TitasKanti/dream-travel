@@ -8,7 +8,7 @@ const MyOrders = () => {
     const [myOrders, setMyOrders] = useState({})
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://mighty-shore-84070.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setAllOrders(data))
     }, [])
@@ -23,7 +23,7 @@ const MyOrders = () => {
     const handleDeleteOrder = (id) => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://mighty-shore-84070.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -46,7 +46,7 @@ const MyOrders = () => {
         setMyOrders(updatedOrder);
     }
     const handleStatusUpdate = id => {
-        const url = `http://localhost:5000/orders/${myOrders?._id}`;
+        const url = `https://mighty-shore-84070.herokuapp.com/orders/${myOrders?._id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

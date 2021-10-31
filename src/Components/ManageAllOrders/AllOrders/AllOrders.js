@@ -6,7 +6,7 @@ const AllOrders = ({ allOrder, handleDeleteOrder }) => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/orders/${_id}`;
+        const url = `https://mighty-shore-84070.herokuapp.com/orders/${_id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setOrder(data))
@@ -21,7 +21,7 @@ const AllOrders = ({ allOrder, handleDeleteOrder }) => {
         setOrder(updatedOrder);
     }
     const handleStatusUpdate = id => {
-        const url = `http://localhost:5000/orders/${_id}`;
+        const url = `https://mighty-shore-84070.herokuapp.com/orders/${_id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

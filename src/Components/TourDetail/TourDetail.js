@@ -30,7 +30,7 @@ const TourDetail = () => {
     const onSubmit = data => {
         const newOrder = { ...data, price: selectedEvent?.price, status: 'pending', name: selectedEvent?.name };
         console.log(newOrder);
-        fetch('http://localhost:5000/orders', {
+        fetch('https://mighty-shore-84070.herokuapp.com/orders', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

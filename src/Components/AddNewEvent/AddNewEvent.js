@@ -8,7 +8,7 @@ const AddNewEvent = () => {
     const onSubmit = data => {
         console.log(data);
         const newEvent = { data }
-        fetch('http://localhost:5000/addEvent', {
+        fetch('https://mighty-shore-84070.herokuapp.com/addEvent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
