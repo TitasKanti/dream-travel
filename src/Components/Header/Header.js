@@ -22,21 +22,23 @@ const Header = () => {
                     <NavLink to="/home" activeStyle={{ fontWeight: "bold", color: "khaki" }} className="text-md no-underline ml-3 px-1">Home</NavLink>
 
                     <NavLink to="/about" activeStyle={{ fontWeight: "bold", color: "khaki" }} className="text-md no-underline ml-3 px-1">About</NavLink>
-                    <span className="text-yellow-300 mx-3"> {user.displayName} </span>
 
-                    {/* <NavLink to="/signIn" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-lg no-underline ml-3">Log-In</NavLink> */}
-
-                    {/* <NavLink to="/allServices" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-md no-underline text-grey-darker ml-3 px-1">Services</NavLink> */}
-
-                    {/* <NavLink to="/reviews" activeStyle={{ fontWeight: "bold", color: "blue" }} className="text-md no-underline text-grey-darker ml-3 px-1">Reviews</NavLink>
-                    <span className="text-blue-700 mx-3"> {user.displayName} </span> */}
                     {
                         user?.email ?
-                            <button className="text-white" onClick={logOut}>Log-Out</button>
+
+                            <>
+                                <NavLink to="/myOrders" activeStyle={{ fontWeight: "bold", color: "khaki" }} className="text-lg no-underline ml-3">My Orders</NavLink>
+
+                                <NavLink to="/manageAllOrders" activeStyle={{ fontWeight: "bold", color: "khaki" }} className="text-md no-underline text-grey-darker ml-3 px-1">Manage All Orders</NavLink>
+
+                                <NavLink to="/addEvent" activeStyle={{ fontWeight: "bold", color: "khaki" }} className="text-md no-underline text-grey-darker ml-3 px-1">Add New Event</NavLink>
+
+                                <span className="text-yellow-300 mx-3"> {user.displayName} </span>
+                                <button className="text-white" onClick={logOut}>Log-Out</button>
+                            </>
                             :
                             <NavLink to="/signIn" activeStyle={{ fontWeight: "bold", color: "khaki" }} className="text-md no-underline text-grey-darker ml-3 px-1">Log-In</NavLink>
                     }
-
 
                 </div>
             </nav>

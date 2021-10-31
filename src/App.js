@@ -10,6 +10,9 @@ import TourDetail from './Components/TourDetail/TourDetail';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Travel from './Components/Travel/Travel';
+import MyOrders from './Components/MyOrders/MyOrders';
+import ManageAllOrders from './Components/ManageAllOrders/ManageAllOrders';
+import AddNewEvent from './Components/AddNewEvent/AddNewEvent';
 
 function App() {
   return (
@@ -30,11 +33,17 @@ function App() {
             <Route exact path="/signIn">
               <SignIn></SignIn>
             </Route>
-            {/* <Route exact path="/travel">
-              <Travel></Travel>
-            </Route> */}
             <PrivateRoute exact path="/tourDetail/:id">
               <TourDetail></TourDetail>
+            </PrivateRoute>
+            <PrivateRoute exact path="/myOrders">
+              <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute exact path="/manageAllOrders">
+              <ManageAllOrders></ManageAllOrders>
+            </PrivateRoute>
+            <PrivateRoute exact path="/addEvent">
+              <AddNewEvent></AddNewEvent>
             </PrivateRoute>
             {/* <Route exact path="/notFound">
             <NotFound></NotFound>

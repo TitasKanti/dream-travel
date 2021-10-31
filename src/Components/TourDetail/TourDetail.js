@@ -82,8 +82,8 @@ const TourDetail = () => {
                 <h2>To confirm the order please fill the form.</h2>
                 <form className="flex flex-col leading-10 py-4 mt-2" onSubmit={handleSubmit(onSubmit)}>
 
-                    <input className="px-4 my-2" {...register("name", { required: true, maxLength: 20 })} placeholder={user.displayName} />
-                    <input className="px-4 my-2" type="email" {...register("email")} placeholder={user?.email} />
+                    <input className="px-4 my-2" {...register("name", { required: true, maxLength: 20 })} value={user.displayName} />
+                    <input className="px-4 my-2" type="email" {...register("email")} value={user.email} />
                     <input className="px-4 mb-5" {...register("address")} placeholder="address" />
                     <input className="bg-yellow-800 text-yellow-100 font-bold text-xl py-2 rounded-lg w-2/3" type="submit" value="Place Order" />
                 </form>
