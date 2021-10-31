@@ -18,6 +18,7 @@ const Home = () => {
                 <h2 className="text-yellow-100 text-3xl text-center">To make your vacation memorable <br /> <br /> travel with <span className="text-pink-500">Dream Travel</span></h2>
             </div>
 
+            {/* Booking events */}
             <div className="my-20">
                 <h2 className="mb-10 text-4xl font-bold text-yellow-800 text-center">Book Our Offered Touring Events</h2>
 
