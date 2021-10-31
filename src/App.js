@@ -13,6 +13,7 @@ import Travel from './Components/Travel/Travel';
 import MyOrders from './Components/MyOrders/MyOrders';
 import ManageAllOrders from './Components/ManageAllOrders/ManageAllOrders';
 import AddNewEvent from './Components/AddNewEvent/AddNewEvent';
+import AllOrders from './Components/ManageAllOrders/AllOrders/AllOrders';
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute exact path="/manageAllOrders">
               <ManageAllOrders></ManageAllOrders>
+            </PrivateRoute>
+            <PrivateRoute exact path="/orders/:id">
+              <AllOrders></AllOrders>
             </PrivateRoute>
             <PrivateRoute exact path="/addEvent">
               <AddNewEvent></AddNewEvent>
