@@ -49,9 +49,9 @@ function App() {
             <PrivateRoute exact path="/addEvent">
               <AddNewEvent></AddNewEvent>
             </PrivateRoute>
-            {/* <Route exact path="/notFound">
-            <NotFound></NotFound>
-          </Route> */}
+            <Route exact path="/notFound">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
           <Footer></Footer>
         </Router>
